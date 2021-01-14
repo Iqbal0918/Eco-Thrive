@@ -1,0 +1,396 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    text-decoration: none;
+    list-style-type: none;
+    }
+
+ 
+   body h1{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0.5em 0;
+    font-size: 1.8em;
+    text-align: center;
+    color:white;
+    }
+
+    main{
+        display: inline;
+    }
+
+    #container {
+min-width: 240px;
+max-width: 2000px;
+width: 100%;
+margin: 0 auto;
+    }
+
+header {
+background:rgb(166, 255, 0);
+padding: 1em;
+}
+
+/*navbar*/
+.mainNav {
+position: sticky;
+top: 0;
+}
+
+.mainNav ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+}
+
+.mainNav li {
+flex-grow: 1;
+width: auto;
+background-color:rgb(154, 235, 5);
+border-radius: 20px;
+}
+
+.mainNav a {
+background-repeat: no-repeat;
+background-size: 20px auto;
+background-position: .5em center;
+min-height: 50px;
+line-height: 50px;
+text-decoration: none;
+display: block;
+color: rgb(151, 43, 43);
+}
+
+
+
+.mainNav a:hover{
+background-color:lightskyblue;
+border-radius: 10px;
+}
+
+
+.intro
+{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+}
+
+/*dd this so image fits*/
+img
+{
+  width: 100%;
+  max-height: 500px;
+}
+
+
+
+.no1
+{
+    background-color:rgba(165, 165, 170, 0.4);
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+.no1 h2
+{
+    font-size: 20px;
+    
+}
+.no1 p
+{
+    padding: 0 5px;
+    margin: 0;
+    font-weight: 400;
+}
+ .Img
+ {
+  padding: 5px;
+  width: 100%;
+  margin: 20px 0;
+ }
+
+ 
+
+
+.content
+{
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+}
+.no2
+{
+  background-color:rgba(165, 165, 170, 0.4);
+  text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+  
+}
+.no2 ul li
+{
+  list-style-type: circle;
+}
+.no3
+{
+  background-color:rgba(165, 165, 170, 0.4);
+  text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+
+/*footer*/
+footer
+{
+  background:rgb(166, 255, 0);
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size:12px ;
+font-weight: bold;
+}
+
+.footDetails
+{
+  text-align: left;
+}
+
+
+
+.references
+{
+
+text-align:left;
+
+}
+
+
+/*navbar responsiveness for mobile*/
+@media(max-width: 767px) {
+  .mainNav ul{
+    margin-right: 12px;
+  }
+.mainNav ul li a{
+
+  font-size: 12px;
+  padding: 2px 5px;
+}
+  
+}
+
+
+
+/*--end--*/
+
+
+
+.intro
+  {
+    display: block;
+  }
+
+  .content
+  {
+    display: block;
+    width: 100%;
+  }
+ 
+
+/*manfac */
+  .about {
+display: grid;
+grid-template-columns: auto auto;
+background-color:rgba(165, 165, 170, 0.4);
+padding: 10px;
+  }
+
+  .aboutman{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    
+  }
+
+  .ImgM{
+    padding: 5px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .h{
+color: black;
+
+  }
+
+h2{
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.trickledown {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+  
+ .link{
+text-align: center;
+border: 3px solid black;
+border-radius: 30px;
+background-color: azure;
+padding: 10px;
+margin: 10px 20px;
+font-weight: bold;
+ }
+ 
+
+
+ /*Products Grid   */
+ .grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-template-rows: 2fr,2fr;
+  grid-gap: 20px;
+  background-color:rgba(165, 165, 170, 0.4) ;
+  padding: 30px;
+
+}
+ 
+.grid-container div {
+  background-color: rgb(243, 245, 243);
+  text-align:center;
+  padding: 20px 5px;
+  }
+
+@media (max-width:767px){
+.grid-container img {
+width: 100%;
+}
+.grid-container{
+font-size: 10px;
+}
+.ImgM{
+  margin-top: 80px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 500px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*table */
+#customers {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:rgb(166, 255, 0);
+  color: white;
+}
+
+tfoot{
+text-align: center;
+background-color:rgba(165, 165, 170, 0.4);
+}
+
+
+/*Contact page*/
+.containercontact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    padding: 10px;
+background-color:rgba(36, 36, 179, 0.4) ; 
+    border-radius: 6px;
+}
+
+.email h2,.email p {
+  font-size: 15px;
+  text-align:center;
+  font-weight: bold;
+}
+
+.email{
+  display: grid;
+  grid-template-columns: auto;
+  text-align:center;
+    box-shadow: 2px 2px 4px rgba(45, 104, 94, 0.5);
+    padding: 10px;
+    margin: 40px;
+background-color:rgba(220, 220, 230, 0.4) ; 
+    border-radius: 6px;
+
+}
+
+
+@media (max-width:700px){
+.containercontact{
+display: grid;
+grid-template-columns: auto;
+
+}
+
+
+}
+
+/*button on manfac for css design*/
+.button {
+ background-color: white;
+  border: none;
+  color: black;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-size: 16px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 2px solid #49a54c;
+
+}
+.button:hover {
+  background-color: #49a54c;
+  color: white;
+}
+
+
+
+
+
+ 
