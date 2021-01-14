@@ -1,2 +1,2 @@
-# Eco-Thrust
+# Eco-Thrive
 Final Assignment
