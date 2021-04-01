@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manufacturers">
+    <title>Eco-Thrive Sri Lanka</title>
+    <link rel="stylesheet" href="design1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <div id="container">
+        <header>
+          <h1>ECO-Thrive</h1>
+        </header>
+        <nav class="mainNav">
+          <ul>
+              <li><a href="index.html"><span class="navText">Home</span></a></li>
+              <li><a href="product.html"><span class="navText">Products</span></a></li>
+              <li><a href="manvac.html"><span class="navText">Manufacturers</span></a></li>
+              <li><a href="Contact.html"><span class="navText">Contact</span></a></li>
+              <li><a href="buynow.html"><span class="navText">Buy Now</span></a></li>
+          </ul>
+        </nav>
+
+    </div>
+    <div class="content1">
+        <br><br>
+        <h1 class="topic2">Buy Our eco-friendly Products from here</h1>
+        <br>
+        <fieldset class="buyNowContainer">
+    
+          <div class="formContainer">
+            <div class="formItems">
+              <!-- <legend>Buy Now:</legend> -->
+              <form id="buyNowForm">
+                <div class="formElementContainer">
+                  <label class="label_style">Manufacturer:</label>
+                  <div class="man_drop_container">
+                    <select id="eco_manufacturer" onchange="cal()" required>
+                      <option value="" hidden>-Select Manufacturer-</option>
+                      <option value="1000">Eco-products SL</option>
+                      <option value="1500">EcoWare Lanka</option>
+                      <option value="1000">Trickledown</option>
+                      <option value="2000">backtoearth</option>
+
+                    </select>
+                    <!-- <p id="man_select_name"> </p> -->
+                    <span id="man_select_name"></span>
+                  </div>
+                </div>
+    
+    
+                <br>
+    
+                <div class="formElementContainer">
+                  <label class="label_style"> Packaging Type: </label>
+                  <div class="radio_group_container">
+    
+                    <div class="radio_button_holder">
+                      <input type="radio" name="packageType" value="1000" onclick="getValue(this)" required>
+                      <label>Bags</label><span>(Rs.1000)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input type="radio" name="packageType" value="2000" onclick="getValue(this)" required>
+                      <label>Plates</label><span>(Rs.2000)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input type="radio" name="packageType" value="2500" onclick="getValue(this)">
+                      <label>Mugs</label><span>(Rs.2500)</span>
+                    </div>
+
+                      <div class="radio_button_holder">
+                        <input type="radio" name="packageType" value="800" onclick="getValue(this)">
+                        <label>soap</label><span>(Rs.800)</span>
+                      </div>
+
+                  </div>
+                </div>
+    
+    
+                <br>
+                <div class="formElementContainer">
+                  <label class="label_style"> Size: </label>
+    
+                  <div class="radio_group_container">
+                    <div class="radio_button_holder">
+                      <input type="radio" name="sizes" value="1000" onclick="getSizeValue(this)" required>
+                      <label>Small</label><span>(Rs.1000)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input type="radio" name="sizes" value="2500" onclick="getSizeValue(this)">
+                      <label>Medium</label><span>(Rs.2500)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input type="radio" name="sizes" value="5000" onclick="getSizeValue(this)">
+                      <label>Large</label><span>(Rs.5000)</span>
+    
+                    </div>
+                  </div>
+                </div>
+    
+                <br><br>
+    
+                <div id="extrasContainer">
+                  <label class="label_style2"> Extras: </label>
+    
+                  <div class="radio_group_container">
+    
+                    <div class="radio_button_holder">
+                      <input class="extrasCheckbox" type="checkbox" value="500" name="Mug" onclick="getCheckbox()">
+                      <label>Eco-friendly Packaging </label><span>(Rs.500)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input class="extrasCheckbox" type="checkbox" value="1000" name="greeting card" onclick="getCheckbox()">
+                      <label>Eco-freindly Greeting card </label><span>(Rs.1000)</span>
+                    </div>
+    
+                    <div class="radio_button_holder">
+                      <input class="extrasCheckbox" type="checkbox" value="1500" name="Decorations" onclick="getCheckbox()">
+                      <label>Eco-friendly Decorations </label><span>(Rs.1500)</span>
+                    </div>
+                  </div>
+                </div>
+                <br>
+            </div>
+            <div class="addButtonHolder">
+              <input class="formButton" type="submit" value="Add to Order" onclick="addtoTotalOrder()">
+              <input class="formButton" type="submit" value="Add to Favourite" onclick="addToFav()">
+            </div>
+            </form>
+            <div class="addButtonHolder">
+              <input class="formButton" type="submit" value="Add Fav to Order" onclick="addFavToOrder()">
+              <input class="formButton" type="submit" value="Check Loyalty" onclick="checkLoyalty()">
+            </div>
+            <input class="formButton2" type="submit" value="Place Order" onclick="calLoyalty()">
+          </div>
+          <table class="buynow_table">
+    
+            <tbody>
+              <caption class="currentOrderCaption">Current Order</caption>
+              <tr>
+                <td id="current_order" data-label="Manufacturer"></td>
+                <td id="pack_order" data-label="Package"></td>
+                <td id="size_field" data-label="Size"></td>
+                <td id="extra_field" data-label="Extras"></td>
+                <td id="total_field" data-label="Total"></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <br><br>
+    
+        <!-- <h2 class="currentOrderCaption2"> Total Order</h2> -->
+        <table id="totalOrderTable" class="buynow_table2">
+          <caption class="currentOrderCaption2">Total Order</caption>
+        </table>
+    
+    
+        <table class="buynow_table2">
+          <tr>
+            <td id="grand_total" class="card">
+              Grand Total = 0
+            </td>
+          </tr>
+        </table>
+    
+        <p id="fav">
+    
+        </p>
+
+</div>
+
+<script src="scripts/main.js"></script>
+<script>
+  //check whether browser support service workers
+  if ('serviceWorker' in navigator) {
+      //wait until page loaded to avoid delaying rendering
+      window.addEventListener('load', function() {
+          //register service worker
+          navigator.serviceWorker.register('serviceworker.js').then(
+              function(registration) {
+                  console.log('Service worker registration successful', 
+                               registration);
+              }, 
+              function(err) {
+                  console.log('Service worker registration failed', err);
+          });
+      });
+  }
+  </script>
+ 
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footDetails">
+          <h2>Details</h2>
+          <p>Address:33/A,LilyAvenue,Wellawatte</p>
+          <p>Dev:Iqbal Shameer</p>
+        </div>
+        
+        
+        <div class="reference">
+          <h2>References</h2>
+          <p>backtoearth.lk</p>
+          <p>unsplash</p>
+          <p>ecoproductslk.com</p>
+          <p>trickledown.lk</p>
+        </div>   
+    </footer>
+    
+    
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

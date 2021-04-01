@@ -27,7 +27,7 @@
               <li><a href="product.html"><span class="navText">Products</span></a></li>
               <li><a href="manvac.html"><span class="navText">Manufacturers</span></a></li>
               <li><a href="Contact.html"><span class="navText">Contact</span></a></li>
-              <li><a href="#"><span class="navText">Buy Now</span></a></li>
+              <li><a href="buynow.html"><span class="navText">Buy Now</span></a></li>
           </ul>
         </nav>
     </div>
@@ -76,7 +76,7 @@
     <p>There are many manufacturers and businesses that are actively producing green products that are contributing directly to a clean, safer and more ecologically sustainable world for present and future generations. </p>
 <br>
 <br>
-     <p></p> Some of these organizations are listed below: </p>
+     <p>Some of these organizations are listed below: </p>
      <br>
 <!--numbered list-->
 
@@ -120,12 +120,37 @@
 
 
 
-  </div>
+  
   </section>
 </main>
 
   </body>
-<!--Footer-->
+
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+    </script>
+
+
+
+
+
+
+
+  <!--Footer-->
 
   <footer>
     <div class="footDetails">
